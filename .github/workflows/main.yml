@@ -14,7 +14,7 @@ jobs:
     - name: Build and deploy the Docker image
       env: 
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        APP_NAME: ${{ 'icolors' }}
+        APP_NAME: ${{ 'cryptor' }}
       run: |
         cd ./ASPNetCoreLabs/HerokuContainer
         docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
